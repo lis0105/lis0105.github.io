@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+	<title>禁阁 - 光遇旅途</title>
+	<link rel="shortcut icon" href="../img/112.ico">
+	<link rel="stylesheet" href="../css/style2.css">
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+            overflow: hidden; /* Full screen immersive */
+        }
+        .immersive-bg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url(../img/SKY_20201226_014929_.jpg);
+            background-size: cover;
+            background-position: center;
+            z-index: -1;
+        }
+        .overlay {
+            position: absolute;
+            bottom: 60px;
+            left: 50%;
+            transform: translateX(-50%);
+            text-align: center;
+            background: rgba(0, 0, 0, 0.4);
+            backdrop-filter: blur(10px);
+            padding: 20px 40px;
+            border-radius: 20px;
+            color: white;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+            transition: all 0.3s;
+        }
+        .overlay h2 {
+            font-size: 32px;
+            margin-bottom: 10px;
+            font-weight: 600;
+        }
+        .overlay p {
+            font-size: 16px;
+            opacity: 0.9;
+            margin-bottom: 20px;
+        }
+        .back-btn {
+            display: inline-block;
+            padding: 10px 24px;
+            background: rgba(255,255,255,0.2);
+            color: white;
+            border-radius: 980px;
+            text-decoration: none;
+            transition: background 0.3s;
+            border: 1px solid rgba(255,255,255,0.4);
+        }
+        .back-btn:hover {
+            background: rgba(255,255,255,0.4);
+        }
+    </style>
+</head>
+<body>
+	<nav class="global-nav">
+		<div class="nav-content">
+            <a href="../index.html" class="nav-logo">南柯</a>
+            <ul class="nav-links">
+                <li><a href="../index.html">首页</a></li>
+                <li><a href="./bk.html">个人博客</a></li>
+                <li><a href="../index.php">退出登录</a></li>
+            </ul>
+		</div>
+	</nav>
+
+    <div class="immersive-bg"></div>
+    <div class="overlay">
+        <h2>禁阁</h2>
+        <p>心存希冀，目有繁星。</p>
+        <a href="../index.html" class="back-btn">返回首页</a>
+    </div>
+
+    <script src="../script.js"></script>
+</body>
+</html>

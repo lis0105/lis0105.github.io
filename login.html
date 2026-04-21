@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>登录 - 南柯</title>
+    <link rel="shortcut icon" href="./img/112.ico">
+    <link rel="stylesheet" href="./css/style2.css">
+    <style>
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            background: linear-gradient(135deg, #f5f5f7 0%, #e8e8ed 100%);
+        }
+        
+        .login-container {
+            background: rgba(255, 255, 255, 0.8);
+            backdrop-filter: saturate(180%) blur(30px);
+            -webkit-backdrop-filter: saturate(180%) blur(30px);
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.08);
+            text-align: center;
+            max-width: 400px;
+            width: 100%;
+            margin: 0 20px;
+            border: 1px solid rgba(255,255,255,0.5);
+        }
+
+        .login-logo {
+            width: 80px;
+            height: 80px;
+            margin: 0 auto 20px;
+            border-radius: 50%;
+            background-image: url(./img/112.ico);
+            background-size: cover;
+            background-position: center;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+
+        .login-title {
+            font-size: 24px;
+            font-weight: 600;
+            margin-bottom: 8px;
+            color: var(--text-primary);
+        }
+
+        .login-subtitle {
+            font-size: 14px;
+            color: var(--text-secondary);
+            margin-bottom: 30px;
+        }
+
+        .input-group {
+            margin-bottom: 15px;
+            position: relative;
+        }
+
+        .login-input {
+            width: 100%;
+            padding: 14px 16px;
+            border: 1px solid #d2d2d7;
+            border-radius: 12px;
+            font-size: 16px;
+            outline: none;
+            transition: all 0.3s;
+            background: rgba(255,255,255,0.9);
+            font-family: var(--font-family);
+        }
+
+        .login-input:focus {
+            border-color: var(--link-color);
+            box-shadow: 0 0 0 4px rgba(0, 102, 204, 0.1);
+        }
+
+        .login-btn {
+            width: 100%;
+            padding: 14px;
+            background-color: var(--link-color);
+            color: white;
+            border: none;
+            border-radius: 12px;
+            font-size: 16px;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.3s;
+            margin-top: 10px;
+            font-family: var(--font-family);
+        }
+
+        .login-btn:hover {
+            background-color: #0051a8;
+        }
+
+        .error-msg {
+            color: #ff3b30;
+            font-size: 12px;
+            margin-top: 10px;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <div class="login-logo"></div>
+        <h2 class="login-title">登录个人博客</h2>
+        <p class="login-subtitle">请输入您的账号和密码</p>
+        
+        <form id="loginForm">
+            <div class="input-group">
+                <input type="text" id="username" class="login-input" placeholder="账号 (预设: admin)" required>
+            </div>
+            <div class="input-group">
+                <input type="password" id="password" class="login-input" placeholder="密码 (预设: 123456)" required>
+            </div>
+            <div id="errorMsg" class="error-msg">账号或密码错误</div>
+            <button type="submit" class="login-btn">
+                <span id="btnText">登录</span>
+            </button>
+        </form>
+    </div>
+
+    <script src="./script.js"></script>
+    <script>
+        document.getElementById('loginForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const user = document.getElementById('username').value;
+            const pass = document.getElementById('password').value;
+            const btnText = document.getElementById('btnText');
+            const errorMsg = document.getElementById('errorMsg');
+
+            btnText.innerHTML = '验证中...';
+            errorMsg.style.display = 'none';
+
+            // Simulate network delay
+            setTimeout(() => {
+                // Here we accept 'admin'/'123456' or we can just accept anything for a demo.
+                // Let's enforce the preset for realism.
+                if(user === 'admin' && pass === '123456') {
+                    localStorage.setItem('isLoggedIn', 'true');
+                    window.location.href = './index.html';
+                } else {
+                    errorMsg.style.display = 'block';
+                    btnText.innerHTML = '登录';
+                }
+            }, 800);
+        });
+    </script>
+</body>
+</html>

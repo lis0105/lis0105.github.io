@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+	<title>如何将自己的网站托管在GitHub - 南柯</title>
+	<link rel="shortcut icon" href="../img/112.ico">
+	<link rel="stylesheet" href="../css/style2.css">
+    <style>
+        .article-container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 120px 20px 100px;
+        }
+
+        .article-header {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+
+        .article-title {
+            font-size: 40px;
+            line-height: 1.1;
+            font-weight: 600;
+            color: var(--text-primary);
+            margin-bottom: 20px;
+        }
+
+        .article-meta {
+            font-size: 15px;
+            color: var(--text-secondary);
+        }
+
+        .article-content {
+            font-size: 19px;
+            line-height: 1.6;
+            color: var(--text-primary);
+        }
+
+        .article-content h2 {
+            font-size: 28px;
+            font-weight: 600;
+            margin: 40px 0 20px;
+        }
+
+        .article-content p {
+            margin-bottom: 24px;
+        }
+
+        .article-content ul {
+            margin-bottom: 24px;
+            padding-left: 20px;
+            list-style-type: disc;
+        }
+
+        .article-content li {
+            margin-bottom: 10px;
+        }
+
+        .article-content a {
+            color: var(--link-color);
+            text-decoration: none;
+        }
+
+        .article-content a:hover {
+            text-decoration: underline;
+        }
+
+        .article-content img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+            margin: 30px 0;
+            display: block;
+        }
+
+        hr {
+            border: 0;
+            height: 1px;
+            background: var(--border-color);
+            margin: 40px 0;
+        }
+    </style>
+</head>
+<body>
+    <!-- Global Navigation -->
+	<nav class="global-nav">
+		<div class="nav-content">
+            <a href="../index.html" class="nav-logo">南柯</a>
+            <ul class="nav-links">
+                <li><a href="../index.html">首页</a></li>
+                <li><a href="./bk.html" class="active">个人博客</a></li>
+                <li><a href="../index.php">退出登录</a></li>
+            </ul>
+            <div class="nav-search">
+                <form action="https://cn.bing.com/search" target="_blank" method="get">
+                    <input type="text" id="search-input" name="q" placeholder="搜索内容..." required>
+                    <button type="submit" aria-label="Search">
+                        <svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" class="css-i6dzq1"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+                    </button>
+                </form>
+            </div>
+		</div>
+	</nav>
+
+	<main class="article-container">
+        <header class="article-header">
+            <h1 class="article-title">如何将自己的网站托管在 GitHub 实现伪服务器效果</h1>
+            <div class="article-meta">发布于 2026年4月21日</div>
+        </header>
+
+        <div class="article-content">
+            <p>这是一篇详细的教程，教你如何利用 GitHub Pages 免费部署自己的静态网站，无需购买云服务器和域名。</p>
+            <hr>
+            
+            <h2>1. 准备工作</h2>
+            <ul>
+                <li>注册 <a href="https://github.com/" target="_blank">GitHub</a> 账号。</li>
+                <li>登录后创建一个新的仓库，点击右上角的 <strong>New</strong> 按钮。</li>
+            </ul>
+            <img src="../img/步骤一.jpg" alt="步骤一截图">
+            
+            <h2>2. GitHub 储存库的创建</h2>
+            <img src="../img/步骤二.jpg" alt="步骤二截图">
+            <p>首先进入页面后，在 <strong>Repository name</strong> 的位置填写域名，格式必须是 <code>username.github.io</code>（username 是你的 GitHub 用户名）。</p>
+            <p>然后向下滑动，点击 <strong>Create repository</strong> 按钮。</p>
+            <p>如果创建成功，那么就可以在 GitHub 上看到你的仓库了。创建成功后会直接进入仓库界面。</p>
+            <p>点击 <strong>uploading an existing file</strong> 可以上传自己本地的网页代码。<br>
+            <em>(注：上传文件中必须有 <code>index.html</code>，且必须在主目录中，不能放在文件夹中)</em></p>
+            <img src="../img/4.jpg" alt="上传截图">
+        </div>
+	</main>
+
+    <!-- Footer -->
+    <footer class="global-footer">
+        <div class="footer-content">
+            <div class="footer-links">
+                <div class="footer-column">
+                    <h4>联系我</h4>
+                    <p>Email: <a href="mailto:1945004922@qq.com">1945004922@qq.com</a></p>
+                </div>
+                <div class="footer-column">
+                    <h4>社交平台</h4>
+                    <p><a href="https://github.com/lis0105?tab=repositories" target="_blank">GitHub</a></p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 南柯. 保留所有权利.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../script.js"></script>
+</body>
+</html>
