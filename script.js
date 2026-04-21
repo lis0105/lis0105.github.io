@@ -1,7 +1,7 @@
 // 全局登录状态校验与退出逻辑
 document.addEventListener("DOMContentLoaded", () => {
     // 退出登录逻辑
-    const logoutLinks = document.querySelectorAll('a[href*="login.html"], a[href*="index.php"]');
+    const logoutLinks = document.querySelectorAll('a[href*="login.html"]');
     logoutLinks.forEach(link => {
         if(link.textContent.includes('退出登录')) {
             // 修改href防止直接跳转php
