@@ -1,143 +1,137 @@
-<!DOCTYPE html>
-<html lang="zh">
+<!doctype html>
+<html lang="zh-CN">
 <head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-	<title>南柯 - 个人博客</title>
-	<link rel="shortcut icon" href="./img/112.ico">
-	<link rel="stylesheet" href="./css/style2.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="树下札记的序章——沿着树影，去往一页缓慢生长的文字。">
+  <meta name="theme-color" content="#f2ede3" data-theme-color>
+  <meta property="og:title" content="树下札记 · 序章">
+  <meta property="og:description" content="沿着树影，去往一页缓慢生长的文字。">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="树下札记">
+  <link rel="canonical" href="https://lis0105.github.io/">
+  <link rel="icon" href="./assets/favicon.svg" type="image/svg+xml">
+  <script>
+    try {
+      const savedTheme = localStorage.getItem('gateway-theme');
+      document.documentElement.dataset.theme = savedTheme || (matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+    } catch (_) {}
+  </script>
+  <link rel="stylesheet" href="./assets/gateway.css">
+  <title>树下札记 · 序章</title>
 </head>
 <body>
-    <!-- Global Navigation -->
-	<nav class="global-nav">
-		<div class="nav-content">
-            <a href="./index.html" class="nav-logo">南柯</a>
-            <ul class="nav-links">
-                <li><a href="./index.html" class="active">首页</a></li>
-                <li><a href="./html/bk.html">个人博客</a></li>
-                <li><a href="./index.php">退出登录</a></li>
-            </ul>
-            <div class="nav-search">
-                <form action="https://cn.bing.com/search" target="_blank" method="get">
-                    <input type="text" id="search-input" name="q" placeholder="搜索内容..." required>
-                    <button type="submit" aria-label="Search">
-                        <svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" class="css-i6dzq1"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
-                    </button>
-                </form>
-            </div>
-		</div>
-	</nav>
+  <a class="skip-link" href="#main">跳到正文</a>
 
-    <!-- Hero Section -->
-    <header class="hero">
-        <div class="hero-content">
-            <div class="avatar-container">
-                <div class="avatar"></div>
-            </div>
-            <h1 class="hero-title">光是遇见<br>就很美好</h1>
-            <p class="hero-subtitle">欢迎来到南柯的个人空间。分享摄影、游戏与生活的点滴。</p>
-            <div class="hero-actions">
-                <a href="#portfolio" class="btn btn-primary">探索内容</a>
-                <a href="https://github.com/lis0105?tab=repositories" target="_blank" class="btn btn-secondary">我的 GitHub</a>
-            </div>
+  <header class="site-header">
+    <nav class="nav" aria-label="序章导航">
+      <a class="brand" href="#main" aria-label="树下札记序章首页">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 36 36">
+            <path d="M18 29V12m0 8-7-6m7 2 7-7M9 30h18"/>
+            <path class="brand-leaf" d="M8 7c6 0 9 3 9 9-6 0-9-3-9-9Zm19-3c0 6-3 9-9 9 0-6 3-9 9-9Z"/>
+          </svg>
+        </span>
+        <span class="brand-name">
+          <strong>树下札记</strong>
+          <small>NANKE JOURNAL</small>
+        </span>
+      </a>
+
+      <div class="nav-tools">
+        <span class="chapter-label"><i></i>序章 · GATEWAY</span>
+        <button class="icon-button" type="button" data-theme-toggle aria-label="切换深浅色模式" aria-pressed="false">☾</button>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="gateway" aria-labelledby="gateway-title">
+      <div class="gateway-copy">
+        <p class="eyebrow"><span></span>序章 · 通往树下的一条小径</p>
+        <h1 id="gateway-title">沿着树影，<br>去往一页<em>缓慢生长</em>的文字。</h1>
+        <p class="lead">这里是「树下札记」的门厅。在一棵树下，读技术的枝桠、生活的微光，以及时间慢慢长出的答案。</p>
+
+        <div class="gateway-actions">
+          <a class="enter-button" data-enter href="http://37246c0e81.qicp.vip/" referrerpolicy="no-referrer">
+            <span>步入树下</span>
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M5 12h13m-5-5 5 5-5 5"/>
+            </svg>
+          </a>
+          <span class="next-stop"><i aria-hidden="true"></i>下一站 · 树下札记博客</span>
         </div>
-    </header>
 
-    <!-- Portfolio / Blog Grid -->
-    <main class="main-content" id="portfolio">
-        <div class="section-header">
-            <h2>光遇旅途</h2>
-            <p>探索天空王国的每一个角落</p>
-        </div>
-        
-        <div class="card-grid">
-            <!-- Card 1 -->
-            <a href="./html/1.html" class="apple-card">
-                <div class="card-image">
-                    <img src="./img/SKY_20210101_000218_.jpg" alt="晨岛">
-                </div>
-                <div class="card-content">
-                    <h3>晨岛</h3>
-                    <p>晨光起于白塔顶尖，终将照亮阴霾之地。</p>
-                </div>
-            </a>
+        <p class="quiet-note"><span>“</span>愿每一次抵达，都从一段安静的路开始。</p>
+      </div>
 
-            <!-- Card 2 -->
-            <a href="./html/2.html" class="apple-card">
-                <div class="card-image">
-                    <img src="./img/stu.jpg" alt="云野">
-                </div>
-                <div class="card-content">
-                    <h3>云野</h3>
-                    <p>云月有殊，光影无别。</p>
-                </div>
-            </a>
+      <figure class="gateway-tree">
+        <span class="chapter-stamp" aria-hidden="true">序</span>
+        <svg viewBox="0 0 540 600" aria-hidden="true">
+          <circle class="tree-sun-ring" cx="419" cy="104" r="67"/>
+          <circle class="tree-sun" cx="419" cy="104" r="49"/>
+          <path class="tree-hill hill-back" d="M8 505c99-59 180-66 276-16 90 47 159 31 249-14v125H8Z"/>
+          <path class="tree-hill" d="M-7 550c121-48 216-44 329-2 84 31 155 21 239-12v64H-7Z"/>
+          <path class="path-shadow" d="M226 600c24-56 45-87 66-109 18-19 38-29 63-33 33-6 51-22 59-48"/>
+          <path class="path-line" d="M235 600c23-53 43-82 63-102 18-18 37-27 60-31 35-6 56-24 65-57"/>
+          <g class="tree-crown">
+            <path class="crown-back" d="M104 280c-22-54 13-103 62-106 10-70 70-108 128-78 46-52 134-21 134 51 66 9 86 90 36 128 33 68-29 132-95 109-35 53-114 56-149 9-58 32-129-17-117-80-23-4-41-16-49-33Z"/>
+            <path class="crown-light" d="M135 250c11-38 45-57 79-52 16-48 66-68 107-44 33-27 92-11 99 37 40 14 53 63 26 94-58 8-102 1-139-16-51-24-105-31-172-19Z"/>
+          </g>
+          <g class="tree-wood">
+            <path class="tree-trunk" d="M256 530c25-81 19-152 4-217-8-36-4-72 18-116 8 72 29 113 55 159 23 43 31 107 25 174Z"/>
+            <path class="tree-branch" d="M285 371c-30-79-71-119-121-153M302 397c19-87 64-144 118-178M289 321c-2-79 19-135 56-180M266 350c-33-48-72-72-119-77"/>
+            <path class="tree-grain" d="M292 509c18-54 21-99 8-138m34 136c-4-48-1-87 11-119"/>
+          </g>
+          <g class="leaves">
+            <ellipse cx="151" cy="189" rx="10" ry="18" transform="rotate(-48 151 189)"/>
+            <ellipse cx="194" cy="130" rx="9" ry="17" transform="rotate(-18 194 130)"/>
+            <ellipse cx="351" cy="108" rx="10" ry="18" transform="rotate(25 351 108)"/>
+            <ellipse cx="438" cy="202" rx="9" ry="17" transform="rotate(52 438 202)"/>
+            <ellipse cx="455" cy="310" rx="8" ry="15" transform="rotate(72 455 310)"/>
+            <ellipse cx="126" cy="318" rx="8" ry="15" transform="rotate(-65 126 318)"/>
+          </g>
+          <g class="drifting-leaves">
+            <ellipse cx="476" cy="351" rx="5" ry="10" transform="rotate(42 476 351)"/>
+            <ellipse cx="459" cy="390" rx="4" ry="8" transform="rotate(65 459 390)"/>
+          </g>
+          <path class="tree-ground-line" d="M128 531c58-14 117-15 177-2m-97 26c56-11 112-10 170 3"/>
+        </svg>
+        <figcaption><span>卷首</span>门外有风，门内有字。</figcaption>
+      </figure>
+    </section>
 
-            <!-- Card 3 -->
-            <a href="./html/3.html" class="apple-card">
-                <div class="card-image">
-                    <img src="./img/SKY_20210110_221141_.jpg" alt="雨林">
-                </div>
-                <div class="card-content">
-                    <h3>雨林</h3>
-                    <p>雨落飞檐，敲响万物生生流转的乐音。</p>
-                </div>
-            </a>
+    <section class="threshold" aria-label="关于树下札记">
+      <div class="threshold-rule"><span>一页序章</span></div>
+      <div class="threshold-items">
+        <p><b>01</b><span><strong>记下枝桠</strong><small>技术与思考</small></span></p>
+        <p><b>02</b><span><strong>收藏微光</strong><small>生活与片刻</small></span></p>
+        <p><b>03</b><span><strong>等待年轮</strong><small>时间与答案</small></span></p>
+      </div>
+    </section>
+  </main>
 
-            <!-- Card 4 -->
-            <a href="./html/4.html" class="apple-card">
-                <div class="card-image">
-                    <img src="./img/SKY_20210115_124829_.jpg" alt="霞谷">
-                </div>
-                <div class="card-content">
-                    <h3>霞谷</h3>
-                    <p>温暖的灵魂终将相遇。</p>
-                </div>
-            </a>
+  <footer class="site-footer">
+    <div class="footer-sign">
+      <span class="footer-ring" aria-hidden="true">南柯</span>
+      <span>© 2026 南柯<br><small>愿文字有根，思想有荫。</small></span>
+    </div>
+    <span class="footer-note">由 GitHub Pages 托管 <i>·</i> 通往树下札记</span>
+  </footer>
 
-            <!-- Card 5 -->
-            <a href="./html/5.html" class="apple-card">
-                <div class="card-image">
-                    <img src="./img/SKY_20210218_062824_.jpg" alt="暮土">
-                </div>
-                <div class="card-content">
-                    <h3>暮土</h3>
-                    <p>暮土太暗了，是容不下霞光城的少年的。</p>
-                </div>
-            </a>
+  <div class="departure" data-departure hidden aria-live="polite" aria-label="正在前往博客">
+    <div class="departure-mark" aria-hidden="true">
+      <svg viewBox="0 0 36 36">
+        <path d="M18 29V12m0 8-7-6m7 2 7-7M9 30h18"/>
+        <path class="brand-leaf" d="M8 7c6 0 9 3 9 9-6 0-9-3-9-9Zm19-3c0 6-3 9-9 9 0-6 3-9 9-9Z"/>
+      </svg>
+    </div>
+    <p>正沿着树影前行…</p>
+  </div>
 
-            <!-- Card 6 -->
-            <a href="./html/6.html" class="apple-card">
-                <div class="card-image">
-                    <img src="./img/SKY_20201226_014929_.jpg" alt="禁阁">
-                </div>
-                <div class="card-content">
-                    <h3>禁阁</h3>
-                    <p>心存希冀，目有繁星。</p>
-                </div>
-            </a>
-        </div>
-    </main>
-
-    <!-- Footer -->
-    <footer class="global-footer">
-        <div class="footer-content">
-            <div class="footer-links">
-                <div class="footer-column">
-                    <h4>联系我</h4>
-                    <p>Email: <a href="mailto:1945004922@qq.com">1945004922@qq.com</a></p>
-                </div>
-                <div class="footer-column">
-                    <h4>社交平台</h4>
-                    <p><a href="https://github.com/lis0105?tab=repositories" target="_blank">GitHub</a></p>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2026 南柯. 保留所有权利.</p>
-            </div>
-        </div>
-    </footer>
-    <script src="./script.js"></script>
+  <noscript>
+    <p class="noscript-note">JavaScript 已关闭，仍可使用“步入树下”按钮正常进入博客。</p>
+  </noscript>
+  <script src="./assets/gateway.js" defer></script>
 </body>
 </html>
